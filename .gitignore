@@ -1,5 +1,13 @@
+# Dependencies & build output
+node_modules/
+dist/
+
 # Dev / non-site files (kept locally, not published)
 screenshots/
 .thumbnail
 support.js
 Nitesh Domal Portfolio.dc.html
+legacy-index.html.bak
+
+# Logs
+*.log

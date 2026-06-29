@@ -2,36 +2,48 @@
 
 Personal portfolio of **Nitesh Domal** — AI/ML Engineer (Multi-Agent systems · Edge AI · Agentic systems).
 
-🔗 **Live site:** _enable GitHub Pages to publish_ → `https://niteshd05.github.io/nitesh-domal-portfolio/`
+Built with **React + Vite**.
 
 ## Highlights
-- ⚡ Single self-contained `index.html` — no build step, no dependencies to install.
-- 🤖 Scroll-driven "tech buddy" mascot that travels a pathway as you scroll.
+- ⚛️ React 18 + Vite — component-based, fast HMR, optimized production build.
+- 🤖 Scroll-driven "tech buddy" mascot that travels a pathway as you scroll (Lenis smooth scroll).
+- 🖥️ Enriched sections: live `whoami` console, agent-pipeline visual, proficiency manifest.
+- 🏆 Reimagined "Trophy Cabinet" — holographic, cursor-tilt foil cards with metallic medallion seals.
 - 🎞️ Interactive project carousel (arrows, dots, keyboard, touch-swipe).
-- 🏆 7× hackathon track record with photos and links to the LinkedIn posts.
-- 💼 Work experience + downloadable résumé and internship certificate.
+- 💼 Work experience timeline + downloadable résumé and internship certificate.
 - 📱 Fully responsive, dark "terminal/agentic" aesthetic.
 
 ## Tech
-Vanilla HTML / CSS / JavaScript · [Lenis](https://github.com/darkroomengineering/lenis) smooth scroll · [Simple Icons](https://simpleicons.org) (CDN) · Clash Display / Satoshi / JetBrains Mono fonts.
+React 18 · [Vite](https://vitejs.dev) · [Lenis](https://github.com/darkroomengineering/lenis) smooth scroll · [Simple Icons](https://simpleicons.org) (CDN) · Clash Display / Satoshi / JetBrains Mono fonts.
 
 ## Run locally
-Just open `index.html` in a browser, or serve the folder:
-
 ```bash
-python -m http.server 8000
-# then visit http://localhost:8000
+npm install
+npm run dev        # dev server with HMR
+npm run build      # production build -> dist/
+npm run preview    # preview the production build
 ```
+
+Tip: append `?fast` to the URL to skip the boot screen and entrance animations.
 
 ## Structure
 ```
-index.html       # the entire site
-hackathon/       # hackathon win photos
-work_exp/        # résumé + internship certificate (PDF)
+index.html              # Vite entry (mounts React)
+src/
+  main.jsx              # app bootstrap
+  App.jsx               # section composition
+  data/portfolio.js     # single source of content
+  hooks/                # scroll manager + IntersectionObserver hooks
+  components/           # one component per section + chrome
+  styles/global.css     # design tokens + all styles
+public/
+  hackathon/            # hackathon win photos
+  work_exp/             # résumé + internship certificate (PDF)
 ```
 
-## Deploy (GitHub Pages)
-Settings → Pages → Source: `Deploy from a branch` → Branch: `main` / root → Save.
+## Deploy
+Build with `npm run build` and serve the `dist/` folder on any static host
+(GitHub Pages, Netlify, Vercel, Cloudflare Pages).
 
 ---
 © 2026 Nitesh Domal
