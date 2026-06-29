@@ -1,5 +1,20 @@
 import { useEffect, useRef, useState } from 'react'
 
+// Reactive media query — updates on resize / orientation change.
+export function useMedia(query) {
+  const [matches, setMatches] = useState(
+    () => typeof window !== 'undefined' && window.matchMedia(query).matches
+  )
+  useEffect(() => {
+    const mq = window.matchMedia(query)
+    const onChange = () => setMatches(mq.matches)
+    onChange()
+    mq.addEventListener('change', onChange)
+    return () => mq.removeEventListener('change', onChange)
+  }, [query])
+  return matches
+}
+
 // Reveal-on-scroll: returns a ref + boolean. Honors ?fast preview mode.
 export function useInView(opts = {}) {
   const ref = useRef(null)

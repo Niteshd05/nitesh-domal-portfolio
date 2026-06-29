@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import Reveal from './Reveal'
-import { useTilt, useCountUp } from '../hooks/observers'
+import { useTilt, useCountUp, useMedia } from '../hooks/observers'
 import { scrollToY } from '../hooks/scroll'
 import { achievements, medalMeta } from '../data/portfolio'
 
@@ -161,20 +161,21 @@ function ImmersiveGallery() {
 }
 
 export default function Achievements() {
-  const reduce = typeof window !== 'undefined'
-    && window.matchMedia('(prefers-reduced-motion: reduce)').matches
+  const reduce = useMedia('(prefers-reduced-motion: reduce)')
+  // Touch / small screens get the native-feeling foil-card grid; the
+  // scroll-pinned horizontal gallery is reserved for pointer + wide viewports.
+  const compact = useMedia('(max-width: 820px)')
+  const useGrid = reduce || compact
 
   return (
     <section id="record" className="record-section" data-section="record">
       <div className="glow-bg" style={{ width: 520, height: 520, top: '4%', left: '30%', background: 'var(--gold)' }} />
       <div className="record-intro">
         <Header />
-        {!reduce && (
-          <div className="record-hint">scroll to walk the cabinet, win by win</div>
-        )}
+        <div className="record-hint">{useGrid ? 'seven wins, three tiers, one record' : 'scroll to walk the cabinet, win by win'}</div>
       </div>
 
-      {reduce
+      {useGrid
         ? <div className="record-intro" style={{ paddingTop: 0 }}>
             <div className="cabinet">
               {ranked.map((a, i) => (

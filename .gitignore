@@ -1,6 +1,7 @@
 # Dependencies & build output
 node_modules/
 dist/
+.vite/
 
 # Dev / non-site files (kept locally, not published)
 screenshots/
