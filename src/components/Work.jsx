@@ -39,7 +39,7 @@ export default function Work() {
 
   return (
     <section id="work" className="section" data-section="work">
-      <div className="eyebrow"><Reveal as="span">// 03 — SELECTED WORK</Reveal></div>
+      <div className="eyebrow"><Reveal as="span">// 03 SELECTED WORK</Reveal></div>
       <Reveal as="h2" className="h2" style={{ maxWidth: '18ch' }}>The council, at work.</Reveal>
 
       <Reveal className="carousel" id="projCarousel" tabIndex={0}

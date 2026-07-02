@@ -26,7 +26,7 @@ function BigCount() {
 function Header() {
   return (
     <>
-      <div className="eyebrow"><Reveal as="span">// 04 — TRACK RECORD</Reveal></div>
+      <div className="eyebrow"><Reveal as="span">// 04 TRACK RECORD</Reveal></div>
       <Reveal className="record-head">
         <div className="record-bignum"><BigCount /><span className="x">×</span></div>
         <div>
@@ -59,7 +59,7 @@ function FoilCard({ a, rank }) {
       <div className="foil-sweep" />
       <div className="foil-index">{String(rank).padStart(2, '0')}</div>
       <div className="foil-imgwrap">
-        <img src={a.img} alt={`${a.title} — ${a.result}`} loading="lazy" />
+        <img src={a.img} alt={`${a.title} - ${a.result}`} loading="lazy" />
         <div className="foil-result">{a.result}</div>
       </div>
       <div className="foil-seal"><span>{meta.emoji}</span></div>
@@ -85,7 +85,7 @@ function Panel({ a, rank, active }) {
       <article className={`imm ${active ? 'is-active' : ''}`} style={{ '--rank': meta.color, '--foil': FOIL[a.medal] }}>
         <div className="imm-edge" />
         <div className="imm-img">
-          <img src={a.img} alt={`${a.title} — ${a.result}`} loading="lazy" />
+          <img src={a.img} alt={`${a.title} - ${a.result}`} loading="lazy" />
           <div className="imm-seal"><span>{meta.emoji}</span></div>
           <div className="imm-result">{a.result}</div>
         </div>

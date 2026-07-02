@@ -12,7 +12,7 @@ export default function Experience() {
   const e = experience
   return (
     <section id="experience" className="section" data-section="experience">
-      <div className="eyebrow"><Reveal as="span">// 05 — WORK EXPERIENCE</Reveal></div>
+      <div className="eyebrow"><Reveal as="span">// 05 WORK EXPERIENCE</Reveal></div>
       <Reveal as="h2" className="h2" style={{ maxWidth: '18ch' }}>Shipping in the real world.</Reveal>
 
       <div className="exp-wrap">
@@ -38,7 +38,7 @@ export default function Experience() {
         <Reveal delay={100} className="doc-card">
           <div className="mono" style={{ fontSize: 11, letterSpacing: '.16em', color: 'var(--warm)' }}>// RÉSUMÉ</div>
           <h4>The full dossier.</h4>
-          <p>Education, projects, the complete skill stack and every hackathon — in one PDF.</p>
+          <p>Education, projects, the complete skill stack and every hackathon, all in one PDF.</p>
           <div className="doc-stats">
             <div className="doc-stat"><div className="v">7×</div><div className="k">WINS</div></div>
             <div className="doc-stat"><div className="v">9.67</div><div className="k">CGPA</div></div>

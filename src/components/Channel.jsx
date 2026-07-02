@@ -5,7 +5,7 @@ import { resume } from '../data/portfolio'
 export default function Channel() {
   return (
     <section id="channel" className="section section--center" data-section="channel">
-      <div className="eyebrow" style={{ marginBottom: 24 }}><Reveal as="span">// 07 — OPEN A CHANNEL</Reveal></div>
+      <div className="eyebrow" style={{ marginBottom: 24 }}><Reveal as="span">// 07 OPEN A CHANNEL</Reveal></div>
       <Reveal as="h2">Let&apos;s build<br />something that thinks.</Reveal>
       <Reveal delay={80} className="chan-btns">
         <a className="btn btn-warm" href="mailto:niteshdomal2005@gmail.com" style={{ fontSize: 13, padding: '14px 26px', borderRadius: 34 }}>niteshdomal2005@gmail.com ↗</a>

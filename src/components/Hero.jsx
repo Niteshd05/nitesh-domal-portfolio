@@ -18,7 +18,7 @@ export default function Hero({ booted }) {
 
   return (
     <section id="hero" data-section="hero">
-      <div id="heroEyebrow" className={booted ? 'in' : ''}>// PORTFOLIO — 2026</div>
+      <div id="heroEyebrow" className={booted ? 'in' : ''}>// PORTFOLIO 2026</div>
       <h1>
         <span className="line">{NAME1.split('').map((c, i) => <Char key={i} c={c} i={i} />)}</span>
         <span className="line stroke">{NAME2.split('').map((c, i) => <Char key={i} c={c} i={NAME1.length + i} />)}</span>

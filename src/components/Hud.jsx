@@ -29,7 +29,7 @@ export default function Hud() {
   return (
     <>
       <div className="hud hud-left">
-        <div>LAT 19.07°N · 72.87°E — MUMBAI</div>
+        <div>LAT 19.07°N · 72.87°E · MUMBAI</div>
         <div id="statusTxt">STATUS: {section === 'channel' ? 'AVAILABLE' : 'ONLINE'}</div>
       </div>
       <div className="hud hud-right">

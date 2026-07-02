@@ -4,8 +4,8 @@ const LINES = [
   '> initializing council...',
   '> loading agents [4/4]  Planner · Researcher · Critic',
   '> establishing channels...',
-  '> handshake ok — encrypting',
-  '> NITESH.DOMAL — online_',
+  '> handshake ok, encrypting',
+  '> NITESH.DOMAL online_',
 ]
 
 export default function Boot({ onDone }) {

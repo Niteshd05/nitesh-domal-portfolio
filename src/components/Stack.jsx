@@ -51,7 +51,7 @@ export default function Stack() {
   return (
     <section id="stack" className="section" data-section="stack">
       <div className="glow-bg" style={{ width: 420, height: 420, top: '20%', right: '-8%', background: 'var(--glow)' }} />
-      <div className="eyebrow"><Reveal as="span">// 02 — THE STACK</Reveal></div>
+      <div className="eyebrow"><Reveal as="span">// 02 THE STACK</Reveal></div>
       <Reveal as="h2" className="h2" style={{ maxWidth: '14ch' }}>System manifest.</Reveal>
 
       <div className="stack-layout">
@@ -76,7 +76,7 @@ export default function Stack() {
             ))}
           </div>
           <p className="stack-note">
-            From low-level <b>C</b> to on-device <b>transformers</b> — the full toolchain behind the agentic builds, kept battle-tested and current.
+            From low-level <b>C</b> to on-device <b>transformers</b>: the full toolchain behind the agentic builds, kept battle-tested and current.
           </p>
         </Reveal>
 

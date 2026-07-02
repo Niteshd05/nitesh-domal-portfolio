@@ -11,11 +11,11 @@ export const education = [
   {
     period: 'AUG 2023 – PRESENT', detail: 'CGPA 9.67',
     degree: 'B.E. Computer Engineering',
-    school: 'Thadomal Shahani Engineering College — TSEC, Mumbai',
+    school: 'Thadomal Shahani Engineering College (TSEC), Mumbai',
   },
   {
     period: 'AUG 2021 – MAY 2023', detail: '92%',
-    degree: 'HSC — Science',
+    degree: 'HSC - Science',
     school: 'Pace Junior Science College, Borivali',
   },
 ]
@@ -73,7 +73,7 @@ export const projects = [
     id: '01', name: 'Aether: LLM Council', category: 'MULTI-AGENT AI',
     hook: 'A council of AI agents that reason together to reach better answers.',
     bullets: [
-      'Engineered a multi-agent system — Planner, Researcher, Critic, Synthesizer — for collaborative reasoning.',
+      'Engineered a multi-agent system with Planner, Researcher, Critic and Synthesizer agents for collaborative reasoning.',
       'Built an orchestration pipeline for inter-agent communication and response validation.',
     ],
     metrics: [
@@ -86,7 +86,7 @@ export const projects = [
   },
   {
     id: '02', name: 'Offline RAG Mobile App', category: 'EDGE AI · ON-DEVICE',
-    hook: 'Document Q&A that runs fully on your phone — no internet, no cloud.',
+    hook: 'Document Q&A that runs fully on your phone, no internet, no cloud.',
     bullets: [
       'Engineered an offline RAG app for on-device document querying with no internet dependency.',
       'Optimized local LLMs and vector embeddings for semantic search on 6GB-RAM phones.',
@@ -101,7 +101,7 @@ export const projects = [
   },
   {
     id: '03', name: 'DermAid', category: 'DUAL-AGENT · HEALTH AI',
-    hook: 'Two agents — one for cosmetic skin analysis, one for medical triage.',
+    hook: 'Two agents: one for cosmetic skin analysis, one for medical triage.',
     bullets: [
       'Built a dual-agent system for cosmetic skin analysis and medical triage (acne, eczema, psoriasis).',
       'Designed an adaptive skincare engine with on-device inference, tuned for diverse skin tones.',
@@ -118,13 +118,13 @@ export const projects = [
 
 export const achievements = [
   {
-    title: 'Need For Code 4.0 — AIML Hackathon', venue: 'TSEC · NATIONAL', medal: 'gold',
+    title: 'Need For Code 4.0 - AIML Hackathon', venue: 'TSEC · NATIONAL', medal: 'gold',
     result: '1ST PLACE', sub: 'AIML Domain Winner', year: '2025',
     img: '/hackathon/NFC.jpeg',
     link: 'https://www.linkedin.com/posts/nitesh-domal_hackathon-machinelearning-artificialintelligence-activity-7359533566940049409-o9ag',
   },
   {
-    title: 'Codeissance — AIML Hackathon', venue: 'TSEC · MUMBAI', medal: 'gold',
+    title: 'Codeissance - AIML Hackathon', venue: 'TSEC · MUMBAI', medal: 'gold',
     result: '1ST PLACE', sub: 'AIML Domain Winner', year: '2025',
     img: '/hackathon/codeissance.jpeg',
     link: 'https://www.linkedin.com/posts/nitesh-domal_hackathon-aiml-mentalhealth-activity-7378031381194629120-x8p-',
@@ -163,12 +163,12 @@ export const achievements = [
 
 export const leadership = [
   {
-    role: 'Chairperson — Rotaract Club of Parleshwar',
-    detail: 'Led inter-club sports across cricket, football and badminton — running brackets, logistics and turnout end to end.',
+    role: 'Chairperson, Rotaract Club of Parleshwar',
+    detail: 'Led inter-club sports across cricket, football and badminton, running brackets, logistics and turnout end to end.',
     tags: ['Leadership', 'Events', 'Sports'],
   },
   {
-    role: "Secretary — TSEC Students' Council",
+    role: "Secretary, TSEC Students' Council",
     detail: 'Planned and ran annual events; owned logistics and inter-department participation across the college.',
     tags: ['Operations', 'Coordination', 'Community'],
   },
